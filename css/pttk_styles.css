@@ -1,9 +1,117 @@
+body {
+  background-image: url("../images/bg_brown_big.jpg");
+  box-shadow:       inset 0 0 100px rgba(99,80,65,.5);
+}
+
+.main_box_top_img {
+  background:   url("../images/gwiazdki.png") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+  height:       28px;
+  clear:        both;
+}
+
+.main_box {
+  margin-bottom: 75px;
+}
+.white_box {
+  background-color: #ffffff;
+}
+
 /* Layout
 ================================ */
 .width_800px{
-	width: 800px;
+	width: 				800px;
 }
 
 .width_600px{
-	width: 600px;
+	width: 				600px;
+}
+
+.width_50 {
+	width: 				50%;
+}
+
+.container{
+	clear: 				both;
+}
+
+
+/* Navigation
+================================ */
+.navbar {
+  background-color:     #34510e;
+  border-bottom-color:  #546835;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+  background-color:     #213605;
+}
+
+a {
+  color:            #ffffff;
+}
+a:hover {
+  color:            #213605;
+}
+
+.main_logo {
+  background: 	    url("../images/logo_pttk.png") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+  height: 			    325px;
+  width: 				    319px;
+  margin-top: 	    22px;
+  overflow: 		    hidden;
+  text-indent: 	    100%;
+  white-space: 	    nowrap;
+}
+
+.zameczek_logo{
+  background: 	    url("../images/logo_zameczek.png") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+  height: 			    260px;
+  width: 				    290px;
+  margin-top: 	    22px;
+  overflow: 		    hidden;
+  text-indent: 	    100%;
+  white-space: 	    nowrap;
+}
+
+.page-header {
+  border:           none;
+}
+
+.text_top {
+  width:            600px;
+  height:           86px;
+  background:       url("../images/bg_grey.jpg") repeat;
+  text-align:       right;
+
+  position:         relative;
+  z-index:          99;
+}
+.text_middle {
+  width:            1495px;
+  height:           484px;
+  margin-top:       -25px;
+  background:       url("../images/bg_red.jpg") repeat;
+  text-align:       right;
+
+  position:         relative;
+  z-index:          20;  
+}
+.text_middle h2 {
+  margin:           0;
+  padding-top:      25px;
+}
+.text_bottom {
+  width:            435px;
+  height:           80px;
+  margin-top:       -25px;
+  background:       url("../images/bg_grey.jpg") repeat;
+}
+.text_bottom p {
+  margin-top:       25px;
+}
+
+/* Slider
+================================ */
+#pttk_carousel {
+  margin-bottom:    75px;
 }
