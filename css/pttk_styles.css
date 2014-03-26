@@ -1,7 +1,48 @@
+@font-face {
+  font-family: 'MyPTSans';
+  src: url('../fonts/PT_Sans/PT_Sans-Web-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'MyTinos';
+  src: url('../fonts/Tinos/Tinos-Regular.ttf') format('truetype');;
+}
+
+
 body {
   background-image: url("../images/bg_brown_big.jpg");
   box-shadow:       inset 0 0 100px rgba(99,80,65,.5);
+
+  font-family:  'MyPTSans', 'PT Sans', sans-serif; 
+  font-weight:  400;
+  font-size:    34px;
+  line-height:  40px;
 }
+
+.page-header {
+  font-weight: bold;
+}
+#home_page_intro {
+  font-family:  'MyTinos', 'Tinos', serif;
+  font-size:    23px;
+  font-weight:  bold;
+}
+.nav-pills {
+  font-size:    15px;
+}
+.navbar-fixed-bottom .nav-pills {
+  font-size:    18px;
+}
+
+.text_middle h2 {
+  font-size:    40px;
+  font-weight:  bold;
+  text-align:   center;
+}
+
+
+
+
+
 
 .main_box_top_img {
   background:   url("../images/gwiazdki.png") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
