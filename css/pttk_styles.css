@@ -27,10 +27,13 @@ body {
   margin-top:       20px;
   margin-bottom:    45px;
 }
-.nav-pills {
+.navbar-nav {
   font-size:        15px;
 }
-.navbar-fixed-bottom .nav-pills {
+.nav-pills {
+  font-size:        14px;
+}
+.navbar-fixed-bottom .navbar-nav {
   font-size:        17px;
 }
 
@@ -98,7 +101,7 @@ body {
   border-bottom-color:  #546835;
 }
 
-.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+.navbar-nav>li.active>a, .navbar-nav>li.active>a:hover, .navbar-nav>li.active>a:focus {
   background-color:     #213605;
 }
 
