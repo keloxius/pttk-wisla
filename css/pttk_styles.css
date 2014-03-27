@@ -34,16 +34,23 @@ body {
 }
 
 .text_middle h2 {
-  font-size:    40px;
+  font-size:    41px;
   font-weight:  bold;
-  text-align:   center;
 }
 
 
+/* Navbar_top
+================================ */
+.navbar-header {
+  position: absolute;
+  z-index:  999;
+}
+.top_nav_menu {
+  padding: 20px 0 70px 0;
+}
 
-
-
-
+/* Mainbox
+================================ */
 .main_box_top_img {
   background:   url("../images/gwiazdki.png") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
   height:       28px;
@@ -116,39 +123,55 @@ a:hover {
 
 .page-header {
   border:           none;
+  color:            black;
 }
 
+.text_top, .text_middle, .text_bottom {
+  border-radius: 10px;
+ }
 .text_top {
-  width:            600px;
-  height:           86px;
+  width:            450px;
+  height:           70px;
   background:       url("../images/bg_grey.jpg") repeat;
   text-align:       right;
 
   position:         relative;
   z-index:          99;
+  margin-top:       50px;
+  padding-top:      10px;
+}
+.text_top small {
+  padding-right:    30px;  
 }
 .text_middle {
-  width:            1495px;
-  height:           484px;
-  margin-top:       -25px;
+  width:            850px;
+  height:           137px;
+  margin-left:      60px;
+  margin-top:       -15px;
   background:       url("../images/bg_red.jpg") repeat;
-  text-align:       right;
 
   position:         relative;
   z-index:          20;  
 }
 .text_middle h2 {
   margin:           0;
-  padding-top:      25px;
+  padding:          25px 0 0 25px;
 }
 .text_bottom {
-  width:            435px;
-  height:           80px;
+  width:            230px;
+  height:           60px;
   margin-top:       -25px;
+  margin-left:      100px;
   background:       url("../images/bg_grey.jpg") repeat;
 }
 .text_bottom p {
   margin-top:       25px;
+}
+
+.page-header .pull-right {
+  z-index:  99;
+  position: absolute;
+  right:    0;
 }
 
 /* Slider
