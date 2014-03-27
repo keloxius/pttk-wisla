@@ -84,6 +84,12 @@ body {
 	clear: 				both;
 }
 
+.navbar-toggle {
+  background-color: #34510e;
+}
+.navbar-toggle .icon-bar {
+  background-color: #fff;
+}
 
 /* Navigation
 ================================ */
