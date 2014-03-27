@@ -12,56 +12,58 @@ body {
   background-image: url("../images/bg_brown_big.jpg");
   box-shadow:       inset 0 0 100px rgba(99,80,65,.5);
 
-  font-family:  'MyPTSans', 'PT Sans', sans-serif; 
-  font-weight:  400;
-  font-size:    34px;
-  line-height:  40px;
+  font-family:  '   MyPTSans', 'PT Sans', sans-serif; 
+  font-weight:      400;
+  font-size:        34px;
+  line-height:      40px;
 }
 
 .page-header {
   font-weight: bold;
 }
 #home_page_intro {
-  font-family:  'MyTinos', 'Tinos', serif;
-  font-size:    23px;
-  font-weight:  bold;
+  font-family:      'MyTinos', 'Tinos', serif;
+  font-size:        23px;
+  margin-top:       20px;
+  margin-bottom:    45px;
 }
 .nav-pills {
-  font-size:    15px;
+  font-size:        15px;
 }
 .navbar-fixed-bottom .nav-pills {
-  font-size:    18px;
+  font-size:        18px;
 }
 
 .text_middle h2 {
-  font-size:    41px;
-  font-weight:  bold;
+  font-size:        41px;
+  font-weight:      bold;
 }
 
 
 /* Navbar_top
 ================================ */
 .navbar-header {
-  position: absolute;
-  z-index:  999;
+  position:         absolute;
+  z-index:          999;
 }
 .top_nav_menu {
-  padding: 20px 0 70px 0;
+  padding:          20px 0 70px 0;
 }
 
 /* Mainbox
 ================================ */
 .main_box_top_img {
-  background:   url("../images/gwiazdki.png") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
-  height:       28px;
-  clear:        both;
+  background:       url("../images/gwiazdki.png") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+  height:           28px;
+  clear:            both;
 }
 
 .main_box {
-  margin-bottom: 75px;
+  margin-top:       -12px;
+  margin-bottom:    75px;
 }
 .white_box {
-  background-color: #ffffff;
+  background-color:  #ffffff;
 }
 
 /* Layout
@@ -124,10 +126,12 @@ a:hover {
 .page-header {
   border:           none;
   color:            black;
+  overflow:         auto;
+  margin:           40px 0 100px;
 }
 
 .text_top, .text_middle, .text_bottom {
-  border-radius: 10px;
+  border-radius:    10px;
  }
 .text_top {
   width:            450px;
@@ -165,7 +169,10 @@ a:hover {
   background:       url("../images/bg_grey.jpg") repeat;
 }
 .text_bottom p {
-  margin-top:       25px;
+  margin-top:       15px;
+  font-size:        24px;
+  text-align:       center;
+  padding-top:      10px;
 }
 
 .page-header .pull-right {
