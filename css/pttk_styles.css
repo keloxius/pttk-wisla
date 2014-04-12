@@ -50,7 +50,7 @@ body {
   z-index:          999;
 }
 .top_nav_menu {
-  padding:          20px 30px 70px 0;
+  padding:          20px 30px 50px 0;
 }
 
 /* Mainbox
@@ -114,13 +114,15 @@ a:hover {
 
 .main_logo {
   background: 	    url("../images/logo_pttk.png") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
-  height: 			    325px;
-  width: 				    192px;
+  height: 			    158px;
+  width: 				    162px;
   margin-top: 	    22px;
   overflow: 		    hidden;
   text-indent: 	    100%;
   white-space: 	    nowrap;
   margin-left:      25px;
+  color:            #34510E;
+  text-shadow:      none;
 }
 
 
@@ -140,12 +142,14 @@ a:hover {
 
 .zameczek_logo{
   background:       url("../images/logo_zameczek.png") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
-  height:           260px;
+  height:           133px;
   width:            145px;
   margin-top:       22px;
   overflow:         hidden;
   text-indent:      100%;
   white-space:      nowrap;
+  color:            rgba(0, 0, 0, 0);
+  text-shadow:      none;
 }
 
 .text_top, .text_middle, .text_bottom {
