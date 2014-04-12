@@ -1,0 +1,66 @@
+@media (max-width: 1200px ){
+	.navbar-nav {
+		font-size: 12px;
+	}
+	.zamek_container {
+		display: none;
+	}
+}
+
+@media (max-width: 992px ){
+	.top_nav_menu {
+		padding: 20px 0 10px 0;
+		width: 500px;
+	}
+	.navbar-nav>li>a {
+		padding: 15px 8px;
+	}
+
+	.text_middle {
+		width: 645px;
+		height: 100px;
+	}
+
+	.text_middle h2 {
+		font-size: 26px;
+	}
+}
+
+@media (max-width: 767px ){
+	.main_logo {
+		width: 100px;
+		height: 98px;
+		margin-top: 10px;
+	}
+
+	.page-header {
+		overflow: hidden;
+	}
+
+	.text_top {
+		width: 225px;
+		height: 50px;
+		padding-top: 0px;
+	}
+	.text_top small {
+		font-size: 14px;
+	}
+	.text_middle {
+		width: 410px;
+		height: 76px;
+	}
+	.text_middle h2 {
+		font-size: 15px;
+	}
+	.text_bottom {
+		height: 50px;
+	}
+	.text_bottom p {
+		font-size: 14px;
+	}
+
+
+
+
+
+}
