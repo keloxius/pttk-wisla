@@ -1,4 +1,26 @@
-var pttkApp = angular.module('pttkApp', []);
+var pttkApp = angular.module('pttkApp', ['ngRoute']);
+
+// configure our routes
+pttkApp.config(function($routeProvider) {
+    $routeProvider
+        .when('/', {
+            templateUrl : 'partials/home.html',
+            controller  : 'mainController'
+        })
+        .when('/imprezy', {
+            templateUrl : 'partials/imprezy.html',
+            controller  : 'imprezyController'
+        });
+});
+
+// create the controller and inject Angular's $scope
+pttkApp.controller('mainController', function($scope) {
+    $scope.message = 'Everyone come and see how good I look!';
+});
+
+pttkApp.controller('imprezyController', function($scope) {
+    $scope.message = 'Look! I am an imprezy page.';
+});
 
 pttkApp.controller('StoryListCtrl', function ($scope) {
   $scope.stories = [

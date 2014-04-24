@@ -9,6 +9,13 @@
     <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
     <link href="css/pttk_styles.css" rel="stylesheet" media="screen">   
     <link href="css/pttk_media.css" rel="stylesheet" type="screen" > 
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"></script>
+    <script src="js/pttk_angular.js"></script> 
   </head>
   <body>
     <!-- Main Container -->
@@ -31,12 +38,12 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="top_nav_menu nav navbar-nav pull-right">
             <li class="active"><a href="#">Strona Główna</a></li>
-            <li><a href="#">Imprezy</a></li>
-            <li><a href="#">Noclegi</a></li>
-            <li><a href="#">Biuro Obsługi Ruchu Turystycznego</a></li>
-            <li><a href="#">Znakowanie</a></li>
-            <li><a href="#">Sklep</a></li>
-            <li><a href="#">O Nas</a></li>
+            <li><a href="#imprezy">Imprezy</a></li>
+            <li><a href="#noclegi">Noclegi</a></li>
+            <li><a href="#biuro">Biuro Obsługi Ruchu Turystycznego</a></li>
+            <li><a href="#znakowanie">Znakowanie</a></li>
+            <li><a href="#sklep">Sklep</a></li>
+            <li><a href="#onas">O Nas</a></li>
           </ul>
         </div>
       </nav>
@@ -69,41 +76,9 @@
 
   
       <div class="main_box_top_img "></div>
-      <div class="main_box container white_box">
-        <p id="home_page_intro" class="center-block text-center width_600px">Jesteśmy zapaloną grupą miłośników Wisły i naszą spacjalnością jest organizowanie wspaniałych wycieczek po tym cudownym miasteczku. Dlatego też serdecznie zapraszamy Cię do rozejrzenia się po naszych strony, gdzie przedstawiamy wiele pomysłów jak miło i przyjemnie spędzić czas w Wiśle.</p>
 
-        <div id="pttk_carousel" class="carousel slide jumbotron" data-ride="carousel">
-          <!-- main wrapper -->
-          <div class="container width_800px">
-            <div class="carousel-inner">
-              <div class="item active">
-                <h1>Rajd im. J. Kukuczki 2014</h1>
-                <p>W dniu 17 maja odbędzie się Rajd Górski im. Jerzego Kukuczki, organizowany głównie przez oddział PTTK Wisła pod patronatem Pani Cecylii Kukuczki i m.in. UG Istebna.</p>
-              </div>
-              <div class="item">
-                <h1>Nowy szlak turystyczny</h1>
-                <p>W jesieni ub. roku został na terenie Wisly wytyczony nowy szlak turystyczny autorstwa Eli Dorighi - naszej "świeżo upieczonej przewodniczki". Jest to przedmiotem jej pracy    magisterskiej. Poniżej przedstawiamy jej autorski opis szlaku i mapkę na której szlak zaznaczony jest kolorem ciemnoczerwonym. Zapraszamy wszystkich do przejscia ta trasą bo jest,   naprawdę ciekawa. Opis szlaku i mapka znajdują sie w dolnej części tej strony</p>
-              </div>
-              <div class="item">
-                <h1>Rajd ku źródłom Wisły 2014</h1>
-                <p>ODDZIAŁ PTTK "WISŁA" zaprasza na XI międzynarodowy rajd narciarsko-pieszy "Ku żródłom Wisły". Rajd odbędzie się 22 marca 2014r. na dwóch trasach. Serdecznie zapraszamy!</p>
-              </div>
-            </div>
-          </div>
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#pttk_carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#pttk_carousel" data-slide-to="1"></li>
-            <li data-target="#pttk_carousel" data-slide-to="2"></li>
-          </ol>
-          <!-- Controls -->
-          <a class="left carousel-control" href="#pttk_carousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-          </a>
-          <a class="right carousel-control" href="#pttk_carousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-        </div>
+      <div ng-controller="mainController">
+        <div ng-view></div>
       </div>
   
       <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
@@ -119,11 +94,8 @@
 
     </div>
 
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>  
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>  
-    <script src="js/pttk_angular.js"></script>  
+
 
   </body>
 </html>
