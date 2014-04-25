@@ -1,35 +1,17 @@
 <div class="main_box container white_box">
-  <p id="home_page_intro" class="center-block text-center width_600px">Jesteśmy zapgrupą miłośników Wisły i naszą spacjalnością jest organizowanie wspaniałych wycipo tym cudownym miasteczku. Dlatego też serdecznie zapraszamy Cię do rozejrzenipo naszych strony, gdzie przedstawiamy wiele pomysłów jak miło i przyjemnie spczas w Wiśle
-  <div id="pttk_carousel" class="carousel slide jumbotron" data-ride="carousel">
-    <!-- main wrapper -->
-    <div class="container width_800px">
-      <div class="carousel-inner">
-        <div class="item active">
-          <h1>Rajd im. J. Kukuczki 2014</h1>
-          <p>W dniu 17 maja odbędzie się Rajd Górski im. Jerzego Kukuczki, organizgłównie przez oddział PTTK Wisła pod patronatem Pani Cecylii Kukuczki i UG Istebna.</p>
-        </div>
-        <div class="item">
-          <h1>Nowy szlak turystyczny</h1>
-          <p>W jesieni ub. roku został na terenie Wisly wytyczony nowy szlak turystautorstwa Eli Dorighi - naszej "świeżo upieczonej przewodniczki". Jeprzedmiotem jej pracy    magisterskiej. Poniżej przedstawiamy jej autopis szlaku i mapkę na której szlak zaznaczony jest kolorem ciemnoczerwZapraszamy wszystkich do przejscia ta trasą bo jest,   naprawdę ciekawa.szlaku i mapka znajdują sie w dolnej części tej strony</p>
-        </div>
-        <div class="item">
-          <h1>Rajd ku źródłom Wisły 2014</h1>
-          <p>ODDZIAŁ PTTK "WISŁA" zaprasza na XI międzynarodowy rajd narciarsko-p"Ku żródłom Wisły". Rajd odbędzie się 22 marca 2014r. na dwóch traSerdecznie zapraszamy!</p>
-        </div>
-      </div>
+  <p id="home_page_intro" class="center-block text-center width_600px">Jesteśmy zapgrupą miłośników Wisły i naszą spacjalnością jest organizowanie wspaniałych wycipo tym cudownym miasteczku. Dlatego też serdecznie zapraszamy Cię do rozejrzenipo naszych strony, gdzie przedstawiamy wiele pomysłów jak miło i przyjemnie spczas w Wiśle</p>
+  
+  <div ng-controller="carouselController">
+    <div style="height: 305px">
+      <carousel interval="myInterval">
+        <slide ng-repeat="slide in slides" active="slide.active">
+          <div style="width: 603px;height: 300px;margin: 0 auto;background-color: black;"></div>
+          <div class="carousel-caption">
+            <h2>{{slide.title}}</h4>
+            <small>{{slide.content}}</small>
+          </div>
+        </slide>
+      </carousel>
     </div>
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#pttk_carousel" data-slide-to="0" class="active"></li>
-      <li data-target="#pttk_carousel" data-slide-to="1"></li>
-      <li data-target="#pttk_carousel" data-slide-to="2"></li>
-    </ol>
-    <!-- Controls -->
-    <a class="left carousel-control" href="#pttk_carousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-    </a>
-    <a class="right carousel-control" href="#pttk_carousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-    </a>
   </div>
 </div>

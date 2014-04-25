@@ -13,11 +13,12 @@
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>  
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js"></script>
     <script src="js/pttk_angular.js"></script> 
   </head>
-  <body>
+  <body ng-controller="mainController">
     <!-- Main Container -->
     <div class="container">
  
@@ -65,29 +66,22 @@
         </div>
       </div>
 
-      <div ng-controller="StoryListCtrl">
-        <ul>
-          <li ng-repeat="story in stories | filter:query | orderBy:'age'">
-            <h2>{{story.title}}</h2>
-            <p>{{story.text}}</p>
-          </li>
-        </ul>
-      </div>
-
-  
+ 
       <div class="main_box_top_img "></div>
 
-      <div ng-controller="mainController">
+      <div id="main_container">
         <div ng-view></div>
       </div>
+
+
   
       <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
        <div class="container">
          <ul class="nav nav-pills nav-justified">
-           <li><a href="#">Wycieczki</a></li>
-           <li><a href="#">Odznaki Turystyczne</a></li>
-           <li><a href="#">Wiślańskie Koło Cyklistów "Góral"</a></li>
-           <li><a href="#">SKKT "KRETY"</a></li>
+           <li><a href="#wycieczki">Wycieczki</a></li>
+           <li><a href="#odznaki">Odznaki Turystyczne</a></li>
+           <li><a href="#goral">Wiślańskie Koło Cyklistów "Góral"</a></li>
+           <li><a href="#krety">SKKT "KRETY"</a></li>
          </ul>
         </div>
       </nav>
