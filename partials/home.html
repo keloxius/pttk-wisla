@@ -1,13 +1,13 @@
 <div class="main_box container white_box">
-  <p id="home_page_intro" class="center-block text-center width_600px">Jesteśmy zapgrupą miłośników Wisły i naszą spacjalnością jest organizowanie wspaniałych wycipo tym cudownym miasteczku. Dlatego też serdecznie zapraszamy Cię do rozejrzenipo naszych strony, gdzie przedstawiamy wiele pomysłów jak miło i przyjemnie spczas w Wiśle</p>
+  <p id="home_page_intro" class="center-block text-center side_padding">Jesteśmy zapaloną grupą miłośników Wisły i naszą spacjalnością jest organizowanie wspaniałych wycieczek po tym cudownym miasteczku. Dlatego też serdecznie zapraszamy Cię do rozejrzenia się po naszych strony, gdzie przedstawiamy wiele wspaniałych pomysłów jak miło i przyjemnie spędzic czas w Wiśle</p>
   
   <div ng-controller="carouselController">
-    <div style="height: 305px">
+    <div style="height: 284px">
       <carousel interval="myInterval">
         <slide ng-repeat="slide in slides" active="slide.active">
-          <div style="width: 603px;height: 300px;margin: 0 auto;background-color: black;"></div>
+          <div class='slider_bg_box'></div>
           <div class="carousel-caption">
-            <h2>{{slide.title}}</h4>
+            <h1>{{slide.title}}</h1>
             <small>{{slide.content}}</small>
           </div>
         </slide>

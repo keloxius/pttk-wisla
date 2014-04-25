@@ -25,7 +25,7 @@ body {
   font-family:      'MyTinos', 'Tinos', serif;
   font-size:        23px;
   margin-top:       20px;
-  margin-bottom:    45px;
+  margin-bottom:    30px;
 }
 .navbar-nav {
   font-size:        15px;
@@ -63,7 +63,7 @@ body {
 
 .main_box {
   margin-top:       -12px;
-  margin-bottom:    75px;
+  margin-bottom:    55px;
 }
 .white_box {
   background-color:  #ffffff;
@@ -75,12 +75,12 @@ body {
 	width: 				800px;
 }
 
-.width_600px{
-	width: 				600px;
-}
-
 .width_50 {
 	width: 				50%;
+}
+
+.side_padding {
+  padding:      0 45px;
 }
 
 .container{
@@ -116,7 +116,7 @@ a:hover {
   background: 	    url("../images/logo_pttk.png") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
   height: 			    158px;
   width: 				    162px;
-  margin-top: 	    22px;
+  margin-top: 	    9px;
   overflow: 		    hidden;
   text-indent: 	    100%;
   white-space: 	    nowrap;
@@ -130,7 +130,7 @@ a:hover {
   border:           none;
   color:            black;
   overflow:         auto;
-  margin:           40px 0 100px;
+  margin:           23px 0 24px;
 }
 
 .zamek_container {
@@ -157,7 +157,7 @@ a:hover {
  }
 .text_top {
   width:            450px;
-  height:           70px;
+  height:           60px;
   background:       url("../images/bg_grey.jpg") repeat;
   text-align:       right;
 
@@ -171,7 +171,7 @@ a:hover {
 }
 .text_middle {
   width:            850px;
-  height:           137px;
+  height:           130px;
   margin-left:      60px;
   margin-top:       -15px;
   background:       url("../images/bg_red.jpg") repeat;
@@ -185,7 +185,7 @@ a:hover {
 }
 .text_bottom {
   width:            230px;
-  height:           60px;
+  height:           51px;
   margin-top:       -25px;
   margin-left:      100px;
   background:       url("../images/bg_grey.jpg") repeat;
@@ -207,4 +207,18 @@ a:hover {
 ================================ */
 #pttk_carousel {
   margin-bottom:    75px;
+}
+.slider_bg_box{
+  width:            555px;
+  height:           276px;
+}         
+.carousel-caption, .carousel-control{
+  color:            #333;
+  font-family:      'MyTinos', 'Tinos', serif;
+}
+.carousel-indicators li{
+  border-color:     #333;
+}
+.carousel-indicators .active{
+  background-color: #333;
 }
