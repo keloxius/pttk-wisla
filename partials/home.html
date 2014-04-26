@@ -1,17 +1,15 @@
-<div class="main_box container white_box">
-  <p id="home_page_intro" class="center-block text-center side_padding">Jesteśmy zapaloną grupą miłośników Wisły i naszą spacjalnością jest organizowanie wspaniałych wycieczek po tym cudownym miasteczku. Dlatego też serdecznie zapraszamy Cię do rozejrzenia się po naszych strony, gdzie przedstawiamy wiele wspaniałych pomysłów jak miło i przyjemnie spędzic czas w Wiśle</p>
-  
-  <div ng-controller="carouselController">
-    <div style="height: 284px">
-      <carousel interval="myInterval">
-        <slide ng-repeat="slide in slides" active="slide.active">
-          <div class='slider_bg_box'></div>
-          <div class="carousel-caption">
-            <h1>{{slide.title}}</h1>
-            <small>{{slide.content}}</small>
-          </div>
-        </slide>
-      </carousel>
-    </div>
+<p id="home_page_intro" class="center-block text-center side_padding">Jesteśmy zapaloną grupą miłośników Wisły i naszą spacjalnością jest organizowanie wspaniałych wycieczek po tym cudownym miasteczku. Dlatego też serdecznie zapraszamy Cię do rozejrzenia się po naszych strony, gdzie przedstawiamy wiele wspaniałych pomysłów jak miło i przyjemnie spędzic czas w Wiśle</p>
+
+<div ng-controller="carouselController">
+  <div style="height: 284px">
+    <carousel interval="myInterval">
+      <slide ng-repeat="slide in slides" active="slide.active">
+        <div class='slider_bg_box'></div>
+        <div class="carousel-caption">
+          <h1>{{slide.title}}</h1>
+          <small>{{slide.content}}</small>
+        </div>
+      </slide>
+    </carousel>
   </div>
 </div>

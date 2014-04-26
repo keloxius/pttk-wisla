@@ -221,3 +221,53 @@ a:hover {
 .carousel-indicators .active{
   background-color: #333;
 }
+
+
+
+/* Imprezy page css
+================================ */
+.imprezy_header {
+  text-align:       center;
+  background-color: #34510e;
+  border-radius:    10px;
+  padding:          10px;
+  color:            white;  
+  font-size:        21px;
+  line-height:      28px;
+  height:           72px;
+}
+.short_text {
+  padding-top:      21px;
+}
+.imprezy_box{
+  margin-bottom:    50px;
+}
+.imprezy_content {
+  font-size:        15px;
+  line-height:      23px;
+  text-align:       center;
+}
+.turysta_img {
+  background-image: url("../images/turysta.jpg");
+  width:            100px;
+  height:           136px;
+  margin:           20px auto;
+}
+.rajd_img {
+  background-image: url("../images/logo_rajd.png");
+  width:            138px;
+  height:           136px;
+  margin:           20px auto;
+}
+.gory_img {
+  background-image: url("../images/gory.jpg");
+  width:            188px;
+  height:           136px;
+  margin:           20px auto;
+}
+.zamek_prezyd_img {
+  background-image: url("../images/zamek_prezyd.jpg");
+  width:            216px;
+  height:           136px;
+  margin:           20px auto;
+}
