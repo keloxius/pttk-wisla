@@ -10,6 +10,10 @@ pttkApp.config(function($routeProvider) {
     .when('/imprezy', {
       templateUrl : 'partials/imprezy.html',
       controller  : 'imprezyController'
+    })
+    .when('/ku_zrodlom_wisly', {
+      templateUrl : 'partials/ku_zrodlom_wisly.html',
+      controller  : 'imprezyKuZrodlomController'
     });
 });
 
@@ -45,4 +49,8 @@ pttkApp.controller('carouselController', function($scope, $filter) {
 
 pttkApp.controller('imprezyController', function($scope) {
   $scope.message = 'Look! I am an imprezy page.';
+});
+
+pttkApp.controller('imprezyKuZrodlomController', function($scope) {
+  $scope.message = 'Look! I am an ku_zrodlom_wisly page.';
 });

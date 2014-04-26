@@ -6,6 +6,10 @@
   font-family: 'MyTinos';
   src: url('../fonts/Tinos/Tinos-Regular.ttf') format('truetype');;
 }
+@font-face {
+  font-family: 'Lobster';
+  src: url('../fonts/Lobster/Lobster.ttf') format('truetype');;
+}
 
 
 body {
@@ -270,4 +274,20 @@ a:hover {
   width:            216px;
   height:           136px;
   margin:           20px auto;
+}
+.imprezy_title {
+  font-family:      'Lobster', 'cursive';
+  font-size:        48px;
+  padding:          45px 0 20px 0;
+  clear:            both;
+}
+.imprezy_mid_title {
+  text-align:       left;
+  padding-left:     18px;
+  font-family:      'Lobster', 'cursive';
+  font-size:        27px;
+}
+.imprezy_desc {
+  text-align:       left;
+  padding:          0 20px;  
 }
