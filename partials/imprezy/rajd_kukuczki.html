@@ -1,0 +1,39 @@
+<div class="container width_600px">
+  <p id="home_page_intro" class="center-block text-center">PTTK Wisla posiada w swojej ofercie mase ciekawych <a href="#imprezy" style="color:#333;text-decoration: underline;">imprez</a>, na ktore serdecznie zaprasza.</p>
+</div>
+
+<div class="row imprezy_box">
+  <div class="col-md-3">
+    <div class="imprezy_header short_text"><a href="#ku_zrodlom_wisly">Ku źródłom Wisły</a></div>
+  </div>
+  <div class="col-md-3">
+    <div class="imprezy_header short_text"><a href="#ku_zrodlom_wisly">Przewodnik czeka</a></div>
+  </div>
+  <div class="col-md-3">
+    <div class="imprezy_header"><a href="#rajd_kukuczki">Rajd Górski im. Jerzego Kukuczki</a></div>
+  </div>
+  <div class="col-md-3">
+    <div class="imprezy_header"><a href="#ku_zrodlom_wisly">Zwiedzanie Zameczku Prezydenckiego</a></div>
+  </div>
+
+  <div class="imprezy_content">
+    <div class="imprezy_title">Rajd Górski im. Jerzego Kukuczki</div>
+		<h2 class="imprezy_mid_title">A tak to było w 2010 roku:</h2>
+		<p class="imprezy_desc">W ubiegły piątek (14 maja), pomimo niesprzyjającej aury 450 młodych turystów podążało do Istebnej Zaolzia, gdzie w Szkolnym Schronisku Młodzieżowym miała miejsce meta Rajdu im. Jerzego Kukuczki – corocznej imprezy organizowanej przez oddział PTTK Wisła w Wiśle. W bieżącym roku spośród siedmiu tras uczestnicy rajdu zdecydowali się powędrować czterema, z których dwie miały w programie zwiedzanie prowadzonej przez p. Cecylię Kukuczkę, wdowę po naszym najwybitniejszym himalaiście, poświęconą mu izbę pamięci. W tym roku, ze względu na pogodę nie wszystkie grupy odważyły się przybyć, jednakże wśród tych, które dotarły, najbardziej liczna była z Gimnazjum 11 Bielsko-Biała , drugie miejsce pod względem liczby zajęła drużuna z Gimnazjum 22 z Łodzi, a trzecie Szkoła Podstawowa 58 z Poznania. W rajdzie uczestniczyły także grupy z Polskiej Szkoły Podstawowej  i Czeskiej Szkoły Podstawowej obie z Bukowca  w Republice Czeskiej. Najlepszą wiedzą na temat Beskidu Śląskiego i wiedzy o Jerzym Kukuczce Konkursie  wykazały się drużyny ze Szkoły Podstawowej w Korzkwi i z Gimnazjum 22 w Łodzi. Spośród 46 prac plastycznych jury wyróżniło pierwszą nagrodą Weronikę Piasta z SP.58 Poznań, drugą Karolinę Konkol SP 6 Nierodzim, a trzecią Jakuba Drobińskiego  z Gimnazjum 22 Łódz. Po bojach estradowych w konkursie na piosenkę turystyczną najlepszym wykonawcą okazała się drużyna z Łodzi. Nagrody zwycięzcom wręczała p. Cecylia Kukuczka, a o regionalny nastrój i muzyczną oprawę tej uroczystej chwili zadbał znany Koniakowski gawędziarz i muzyk p Tadeusz Rucki, który również na okazję rajdu wystrugał i ufundował zwycięzcy konkursu na piosenkę turystyczną pasterski róg. Wśród licznych nagród ciekawostką był też poświęcony Jerzemu Kukuczce kalendarz, który zaprojektował jego syn Wojciech. Rajd finansowo wsparli :Urząd Marszałkowski ,  Starostwo Powiatowe w Cieszynie oraz Miasto Wisła. Tadeusz Leżański – komandor rajdu postarał się natomiast o licznych sponsorów, wśród których znaleźli się:Urząd Gminy Istebna, Hotel Gołębiewski w Wiśle, Nadleśnictwo Wisła i liczne osoby prywatne, dzięki którym można było nagrodzić zwycięzców w konkursach. Szczególne podziękowania należą się p. Bożenie Struzik - kierownik SSM Zaolzianka, za udostępnienie obiektu i bezinteresowną pomoc w organizacji rajdu.
+    <br>(p.w.)</p>
+
+    <div ng-controller="imprezyKukuczkiController">
+  <div style="height: 484px">
+    <carousel interval="myInterval">
+      <slide ng-repeat="slideImpreza in slideImprezy" active="slideImpreza.active">
+        <img ng-src="{{slideImpreza.image}}" style="margin:auto;">
+        <div class="carousel-caption">
+          <h1>{{slideImpreza.title}}</h1>ss
+          <small>{{slideImpreza.content}}</small>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+</div>
+  </div>
+</div>

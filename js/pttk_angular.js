@@ -12,8 +12,12 @@ pttkApp.config(function($routeProvider) {
       controller  : 'imprezyController'
     })
     .when('/ku_zrodlom_wisly', {
-      templateUrl : 'partials/ku_zrodlom_wisly.html',
+      templateUrl : 'partials/imprezy/ku_zrodlom_wisly.html',
       controller  : 'imprezyKuZrodlomController'
+    })
+    .when('/rajd_kukuczki', {
+      templateUrl : 'partials/imprezy/rajd_kukuczki.html',
+      controller  : 'imprezyKukuczkiController'
     });
 });
 
@@ -43,7 +47,6 @@ pttkApp.controller('carouselController', function($scope, $filter) {
       title: stories[i].title,
       content: stories[i].content
     });
-    console.log(slides);
   }
 });
 
@@ -53,4 +56,28 @@ pttkApp.controller('imprezyController', function($scope) {
 
 pttkApp.controller('imprezyKuZrodlomController', function($scope) {
   $scope.message = 'Look! I am an ku_zrodlom_wisly page.';
+});
+
+pttkApp.controller('imprezyKukuczkiController', function($scope, $filter) {
+  $scope.myInterval = 3000;
+  var slideImprezy = $scope.slideImprezy = [];
+  var imprezy = [
+    {'title': 'Zdjecie 1',
+     'content': 'Tekst 1',
+     'image': '../images/kukuczka/kukuczka_1.jpg'},
+    {'title': 'Zdjecie 2',
+     'content': 'Tekst 2',
+     'image': '../images/kukuczka/kukuczka_2_maly.jpg'},
+    {'title': 'Zdjecie 3',
+     'content': 'Tekst 3',
+     'image': '../images/kukuczka/kukuczka_3_maly.jpg'}
+  ];
+
+  for (var i=0; i<3; i++) {
+    slideImprezy.push({
+      title: imprezy[i].title,
+      content: imprezy[i].content,
+      image: imprezy[i].image
+    });
+  }
 });
