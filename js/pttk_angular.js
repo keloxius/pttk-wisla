@@ -18,6 +18,14 @@ pttkApp.config(function($routeProvider) {
     .when('/rajd_kukuczki', {
       templateUrl : 'partials/imprezy/rajd_kukuczki.html',
       controller  : 'imprezyKukuczkiController'
+    })
+    .when('/przewodnik_czeka', {
+      templateUrl : 'partials/imprezy/przewodnik_czeka.html',
+      controller  : 'imprezyPrzewodnikController'
+    })
+    .when('/zameczek_prezd', {
+      templateUrl : 'partials/imprezy/zameczek_prezd.html',
+      controller  : 'imprezyZameczekController'
     });
 });
 
@@ -55,6 +63,14 @@ pttkApp.controller('imprezyController', function($scope) {
 });
 
 pttkApp.controller('imprezyKuZrodlomController', function($scope) {
+  $scope.message = 'Look! I am an ku_zrodlom_wisly page.';
+});
+
+pttkApp.controller('imprezyPrzewodnikController', function($scope) {
+  $scope.message = 'Look! I am an ku_zrodlom_wisly page.';
+});
+
+pttkApp.controller('imprezyZameczekController', function($scope) {
   $scope.message = 'Look! I am an ku_zrodlom_wisly page.';
 });
 
