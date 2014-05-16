@@ -1,4 +1,4 @@
-var pttkApp = angular.module('pttkApp', ['ngRoute', 'ui.bootstrap']);
+var pttkApp = angular.module('pttkApp', ['ngRoute', 'ui.bootstrap', "google-maps"]);
 
 // configure our routes
 pttkApp.config(function($routeProvider) {
@@ -41,7 +41,21 @@ pttkApp.controller('mainController', function($scope) {
 });
 
 pttkApp.controller('oNasController', function($scope) {
+  angular.extend($scope, {
+      centerProperty: {
+        lat: 49.6597303,
+        lng: 18.8545703
+      },
+      zoomProperty: 15,
+      markersProperty: [ {
+          latitude: 49.6597303,
+          longitude: 18.8545703
+        }],
+      clickedLatitudeProperty: null,  
+      clickedLongitudeProperty: null,
+    });
 });
+
 
 
 pttkApp.controller('carouselController', function($scope, $filter) {

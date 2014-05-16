@@ -23,6 +23,16 @@
 
 <h1>Kontakt</h1>
 <div ng-controller="oNasController">
-  <google-map center="map.center" zoom="map.zoom"></google-map>
-</div>
+      <google-map
+    center="centerProperty"
+    zoom="zoomProperty" 
+    markers="markersProperty"
+    latitude="clickedLatitudeProperty"
+    longitude="clickedLongitudeProperty"
+    mark-click="true"
+    draggable="true"
+    style="height: 400px; width: 50%">
+  </google-map>
+
+  </div>
 <br><br><br><br><br>
