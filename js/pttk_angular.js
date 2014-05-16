@@ -26,10 +26,21 @@ pttkApp.config(function($routeProvider) {
     .when('/zameczek_prezd', {
       templateUrl : 'partials/imprezy/zameczek_prezd.html',
       controller  : 'imprezyZameczekController'
+    })
+    .when('/onas', {
+      templateUrl : 'partials/onas.html',
+      controller  : 'oNasController'
+    })
+    .when('/odznaki', {
+      templateUrl : 'partials/odznaki.html',
+      controller  : 'oNasController'
     });
 });
 
 pttkApp.controller('mainController', function($scope) {
+});
+
+pttkApp.controller('oNasController', function($scope) {
 });
 
 
