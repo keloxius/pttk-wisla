@@ -21,6 +21,10 @@ body {
   font-size:        34px;
   line-height:      40px;
 }
+a {
+  color: #333;
+}
+
 
 .page-header {
   font-weight: bold;
@@ -108,10 +112,10 @@ body {
   background-color:     #213605;
 }
 
-a {
+.navbar a {
   color:            #ffffff;
 }
-a:hover {
+.navbar a:hover {
   color:            #213605;
 }
 

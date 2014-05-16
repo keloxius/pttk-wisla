@@ -1,4 +1,28 @@
+.onas_block{
+	font-size: 15px;
+	line-height: 26px;
+}
+.onas_block .row{
+	margin: 17px 0;
+}
+.onas_block picture, .onas_block img{
+border-radius: 25px;
+}
+.onas_header{
+	margin: 25px 0 10px;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.onas_descr_block{
+	width: 75%;
+	margin: 0 auto;
+}
+
 .angular-google-map {
 	display: block;
 	height: 400px; 
+	width: 400px;
+	margin: 0 auto;
 }
