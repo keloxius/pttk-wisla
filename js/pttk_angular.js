@@ -54,6 +54,8 @@ pttkApp.controller('oNasController', function($scope) {
       clickedLatitudeProperty: null,  
       clickedLongitudeProperty: null,
     });
+
+
 });
 
 

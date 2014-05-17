@@ -20,6 +20,15 @@ border-radius: 25px;
 	margin: 0 auto;
 }
 
+.nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:hover, .nav-tabs.nav-justified>.active>a:focus {
+	border-left-color: rgba(0, 0, 0, 0);
+	border-right-color: rgba(0, 0, 0, 0);
+	border-bottom-color: #ddd;
+	font-weight: bold;
+	font-size: 19px;
+	color: rgb(52, 81, 14);
+}
+
 .angular-google-map {
 	display: block;
 	height: 400px; 
