@@ -10,6 +10,9 @@
 // }
 // 
 // 
-// $( document ).ready(function() {
-//  google.maps.event.addDomListener(window, 'load', initialize);
-// });// 
+$( document ).ready(function() {
+$('#onasTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+}); 

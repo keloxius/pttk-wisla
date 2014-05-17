@@ -1,5 +1,14 @@
 <div ng-controller="oNasController" class='onas_block'>
-<div class='onas_header'>Kilka słów o PTTK</div>
+
+<ul class="nav nav-tabs" id="onasTab">
+  <li class="active"><a href="#home" data-toggle="tab">Kilka słów o PTTK</a></li>
+  <li><a href="#kontakt" data-toggle="tab">Kontakt</a></li>
+  <li><a href="#historia" data-toggle="tab">Historia</a></li>
+</ul>
+
+<div class="tab-content">
+  <div class="tab-pane active" id="home">
+  <div class='onas_header'>Kilka słów o PTTK</div>
 
 <div class='onas_descr_block'>
 <div class="row">
@@ -48,17 +57,14 @@
   </div>
 </div>
 
-
-
-
 <p>
   <q>PTTK promuje system odznak turystycznych i krajoznawczych, mających na celu popularyzację poznawania Polski. Więcej o odznakach <a href="#odznaki">tutaj</a></q>
   <small>( Cytaty z <a href="http://pl.wikipedia.org/wiki/Polskie_Towarzystwo_Turystyczno-Krajoznawcze">Wikipedii</a> )</small>
 </p>
 </div>
-
-
-<div class='onas_header'>Kontakt</div>
+  </div>
+  <div class="tab-pane" id="kontakt">
+  <div class='onas_header'>Kontakt</div>
       <google-map
     center="centerProperty"
     zoom="zoomProperty" 
@@ -71,3 +77,10 @@
 
   </div>
 <br>
+  </div>
+  <div class="tab-pane" id="historia">...</div>
+</div>
+
+
+
+
