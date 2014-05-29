@@ -9,7 +9,11 @@
     <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
     <link href="css/pttk_styles.css" rel="stylesheet" media="screen">   
     <link href="css/pttk_media.css" rel="stylesheet" type="screen" >    
-    <link href="css/pttk_styles_onas.css" rel="stylesheet" type="screen" > 
+    <link href="css/pttk_styles_onas.css" rel="stylesheet" type="screen" >
+    <link href="css/pttk_styles_noclegi.css" rel="stylesheet" type="screen" > 
+
+    <link rel="stylesheet" type="text/css" href="css/demo_shop.css" />
+    <link rel="stylesheet" type="text/css" href="css/component_shop.css" />
 
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>  
@@ -19,7 +23,9 @@
     <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js"></script>
     <script src="js/pttk_angular.js"></script>  
 
-    <script src="js/pttk_js.js"></script>  
+    
+
+    <script src="js/modernizr.custom.js"></script>
 
 
     <script>
@@ -42,7 +48,6 @@
     <div class="container">
  
       <nav class="navbar" role="navigation">
-        <div >
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -109,8 +114,17 @@
 
     </div>
 
-
-
-
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpGridGallery.js"></script>
+ 
+    <!-- <script src="js/pttk_js.js"></script> --> 
+    <script>
+      function load() {
+          console.log('hi',document.getElementById( 'grid-gallery' ) );
+        }
+      window.onload = load;
+    </script>
   </body>
 </html>

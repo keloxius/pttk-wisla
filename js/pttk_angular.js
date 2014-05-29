@@ -31,6 +31,22 @@ pttkApp.config(function($routeProvider) {
       templateUrl : 'partials/onas.html',
       controller  : 'oNasController'
     })
+    .when('/noclegi', {
+      templateUrl : 'partials/noclegi.html',
+      controller  : 'noclegiController'
+    })
+    .when('/biuro', {
+      templateUrl : 'partials/biuro.html',
+      controller  : 'biuroController'
+    })
+    .when('/znakowanie', {
+      templateUrl : 'partials/znakowanie.html',
+      controller  : 'znakowanieController'
+    })
+    .when('/sklep', {
+      templateUrl : 'partials/sklep.html',
+      controller  : 'sklepController'
+    })
     .when('/odznaki', {
       templateUrl : 'partials/odznaki.html',
       controller  : 'oNasController'
@@ -38,6 +54,7 @@ pttkApp.config(function($routeProvider) {
 });
 
 pttkApp.controller('mainController', function($scope) {
+
 });
 
 pttkApp.controller('oNasController', function($scope) {
@@ -58,6 +75,21 @@ pttkApp.controller('oNasController', function($scope) {
 
 });
 
+pttkApp.controller('sklepController', function($scope) {
+  var elem = document.getElementById('grid-gallery');
+        console.log('clicked row',  elem);
+        new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+        console.log('called CBPGridGallery ');
+});
+
+pttkApp.controller('noclegiController', function($scope) {
+  $scope.message = 'Look! I am an imprezy page.';
+});
+
+pttkApp.controller('biuroController', function($scope) {
+});
+pttkApp.controller('znakowanieController', function($scope) {
+});
 
 
 pttkApp.controller('carouselController', function($scope, $filter) {
